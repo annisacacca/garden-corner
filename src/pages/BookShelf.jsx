@@ -471,5 +471,6 @@ export default function Books() {
         onClose={() => setDetailBook(null)}
       />
     </div>
+    
   )
 }

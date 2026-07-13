@@ -79,6 +79,7 @@ export default function App() {
             <Route path="/guestbook" element={<PageTransition><Guestbook /></PageTransition>} />
             <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
             <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
+            
           </Routes>
         </AnimatePresence>
         <Footer />

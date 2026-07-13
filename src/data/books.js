@@ -84,4 +84,12 @@ export const books = [
     synopsis: '"Minimarket yang Merepotkan" karya Kim Ho-yeon bercerita tentang Dokgo, mantan tunawisma tanpa ingatan yang bekerja di sebuah minimarket. Dia ditemukan oleh pemilik toko setelah mengembalikan dompet yang hilang. Sikap tulus Dokgo secara perlahan mengubah hidup para pelanggan dan karyawan yang mampir ke toko tersebut.',
     recommendedBy: 'friend-2',
   },
+  {
+    id: 'book-10',
+    title: 'No Longer Human',
+    author: 'Osamu Dazai',
+    cover: '/images/books/book-10.jpg',
+    synopsis: '"Minimarket yang Merepotkan" karya Kim Ho-yeon bercerita tentang Dokgo, mantan tunawisma tanpa ingatan yang bekerja di sebuah minimarket. Dia ditemukan oleh pemilik toko setelah mengembalikan dompet yang hilang. Sikap tulus Dokgo secara perlahan mengubah hidup para pelanggan dan karyawan yang mampir ke toko tersebut.',
+    recommendedBy: 'friend-1',
+  },
 ]

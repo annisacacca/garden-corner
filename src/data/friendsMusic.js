@@ -43,7 +43,7 @@ export const friendsMusic = [
     name: 'Ciki♡',
     avatar: '/images/friends/friend-2.jpeg',
     thanksNote:
-      'Sudahi si merry christmas mu itu saatnya putar lagu cinta',
+      'Sudahi si merry christmas mu itu',
     secretNote:
       'Hai Cikaaa 🤍 \n Omg, sebelumnya makasii yaa udah mau berkontribusi buat web ini wkwkwk. Seneng banget kamu mau ikut ngeramein.Aku cuma mau bilang, aku sebenernya nggak pernah bener-bener tau kamu lagi ngadepin apa di balik semua itu. Yang aku liat sih, kamu selalu keliatan kuat. Kayak kakak cewek yang somehow dituntut buat bisa ngadepin semuanya sendiri. Mungkin emang kamu keliatan biasa aja, ketawa-ketawa aja, tapi aku yakin pasti ada saatnya kamu capek juga. Apalagi dengan kondisi kamu sekarang, pasti nggak gampang. Berat banget malah. Jadi kalau suatu saat kamu lagi ngerasa overwhelmed, please don’t feel like you have to carry everything alone ya. Kamu nggak sendirian. Aku bakal selalu ada kalau kamu butuh tempat cerita. Mau sekadar ngeluh, ngomel, nangis, atau cerita hal random juga gapapa. Mungkin responku kadang suka agak kaku (maaf ya WKWKWK), tapi aku bakal dengerin sebisa mungkin. Semoga itu bisa bikin hati kamu sedikit lebih lega. Terus satu lagi… you deserve so much better. Jangan pernah ngerasa kamu nggak layak cuma gara-gara si Alex itu. One person doesn’t define your worth. Aku bener-bener berharap suatu hari nanti kamu ketemu seseorang yang bisa sayang sama kamu dengan tulus, saling ngusahain satu sama lain, saling menghargai, setara dalam segala hal……dan tentunya SEAGAMA. WKWKWKWK itu wajib sih 😭. Pokoknya semangat terus ya, Cik. Jangan lupa juga buat istirahat dan sesekali mikirin diri sendiri. Kamu juga berhak bahagia. Dadahhh. See you di cerita-cerita berikutnya. 🤍 \n Salam hangat, \n Amnis',
     secretPassword: 'ayelcupang',
@@ -132,8 +132,8 @@ export const friendsMusic = [
       src: '/audio/friends/friend-4.mp3',
     },
     favoriteAlbum: {
-      title: 'Judul Album',
-      artist: 'Nama Artis',
+      title: 'Flaws and All',
+      artist: 'Wave to earth',
       cover: '/images/friends/friend-4-album.jpg',
     },
     favoriteArtist: {
@@ -248,12 +248,12 @@ export const friendsMusic = [
       src: '/audio/friends/friend-8.mp3',
     },
     favoriteAlbum: {
-      title: 'Judul Album',
-      artist: 'Nama Artis',
+      title: 'Reality club present',
+      artist: 'Reality Club',
       cover: '/images/friends/friend-8-album.jpg',
     },
     favoriteArtist: {
-      name: 'Nama Artis',
+      name: 'Cortis',
       photo: '/images/friends/friend-8-artist.jpg',
     },
   },
