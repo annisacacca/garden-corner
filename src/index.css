@@ -1,0 +1,117 @@
+@keyframes vinylSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #B9D7A8;
+  --secondary: #E9EFD9;
+  --cream: #FFF9F1;
+  --accent: #E7CFA4;
+  --dark: #5F6F52;
+}
+
+* {
+  cursor: none;
+}
+
+@media (max-width: 768px), (hover: none) {
+  * {
+    cursor: auto;
+  }
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--dark);
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-heading {
+  letter-spacing: 0.01em;
+}
+
+/* soft custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 999px;
+  border: 2px solid var(--secondary);
+}
+
+/* paper texture overlay, applied as a fixed layer in App.jsx */
+.paper-texture {
+  background-image: radial-gradient(circle at 1px 1px, rgba(95,111,82,0.06) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+.diary-lines {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 31px,
+    rgba(95, 111, 82, 0.14) 32px
+  );
+}
+
+.washi {
+  background: repeating-linear-gradient(
+    135deg,
+    rgba(233, 207, 164, 0.9),
+    rgba(233, 207, 164, 0.9) 6px,
+    rgba(255, 249, 241, 0.9) 6px,
+    rgba(255, 249, 241, 0.9) 12px
+  );
+}
+
+.card-stack {
+  box-shadow:
+    0 1px 2px rgba(95,111,82,0.08),
+    0 8px 20px -8px rgba(95,111,82,0.25);
+}
+
+.text-stroke-cream {
+  -webkit-text-stroke: 6px var(--cream);
+  paint-order: stroke fill;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
