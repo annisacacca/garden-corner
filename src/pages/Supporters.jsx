@@ -16,6 +16,19 @@ const tapeColors = ['bg-accent/50', 'bg-sky/50', 'bg-blush/50', 'bg-primary/40']
 const tapeRotates = [-6, 4, -4, 6]
 const stickerCycle = ['leaf', 'clover', 'sparkle', 'strawberry']
 
+// pastel palette for name labels — picked per-person via a stable hash
+// so it looks randomized but doesn't reshuffle on every re-render
+const nameColors = ['text-accent', 'text-primary', 'text-blush', 'text-sky']
+
+function hashToIndex(str, length) {
+  let hash = 0
+  for (let i = 0; i < str.length; i++) {
+    hash = (hash << 5) - hash + str.charCodeAt(i)
+    hash |= 0
+  }
+  return Math.abs(hash) % length
+}
+
 // torn-edge photo: dua varian clip-path biar nggak keliatan copy-paste
 const tornClips = [
   'polygon(2% 4%,12% 0%,22% 3%,33% 0%,44% 2%,55% 0%,66% 3%,77% 0%,88% 2%,98% 0%,100% 96%,90% 100%,80% 97%,68% 100%,57% 98%,46% 100%,35% 97%,24% 100%,13% 98%,0% 100%)',
@@ -353,6 +366,7 @@ function SupporterCard({ friend, index }) {
   const flipArrow = index % 2 === 1
   const stickerType = stickerCycle[index % stickerCycle.length]
   const stickerSide = index % 2 === 0 ? '-right-3' : '-left-3'
+  const nameColor = nameColors[hashToIndex(friend.id ?? friend.name ?? String(index), nameColors.length)]
 
   const handleToggle = () => {
     if (revealed) {
@@ -389,7 +403,7 @@ function SupporterCard({ friend, index }) {
       {/* label nama + panah lengkung, gaya "Lang / Yan" di jurnal */}
       <div className={`flex items-center gap-1 mb-1 ${flipArrow ? 'flex-row-reverse justify-end pr-2' : 'pl-2'}`}>
         <ArrowDoodle flip={flipArrow} className="w-9 h-7 shrink-0" />
-        <span className="px-2 py-0.5 -rotate-1 rounded-md bg-accent/10 text-base font-heading text-accent whitespace-nowrap">
+        <span className={`-rotate-1 text-base font-heading font-semibold whitespace-nowrap ${nameColor}`}>
           {friend.name}
         </span>
       </div>

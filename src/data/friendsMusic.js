@@ -259,7 +259,7 @@ export const friendsMusic = [
   },
    {
     id: 'friend-9',
-    name: 'Ashley',
+    name: 'Ashley♡',
     avatar: '/images/friends/friend-9.jpeg',
     thanksNote: 'Buang ga itu ularnya woi!',
     secretNote: 'HALOOOO ASHLEYYY!! \n Sebelumnya makasii banyak yaa udah mau berkontribusi di my little website gwejh ini WKWKWKWK. Beneran appreciate it!! Jujur ya… kita tuh jarang banget ngobrolin kehidupan. Kayak tiap ketemu malah bahas hal-hal random yang entah datang dari mana. 😭 Tapi aku tetep mau bilang semangat yaa buat kerjaannya. Kan ini masih awal-awal juga. Pasti capek, pasti masih banyak yang harus dipelajarin, pasti ada hari-hari yang bikin pengen rebahan seharian. But you’re doing great. Pelan-pelan aja, one step at a time. Semoga kerjanya makin lancar, makin betah, dan cepet jadi suhu di sana. 😎 Terus aku juga masih nggak nyangka sih… KAMU MELIHARA ULAR ANJIR. Landaknya mana? Ini sangat penting. Aku masih menunggu hak rakyat untuk melihat (atau kalau bisa minjem) landaknya. Kalau suatu hari nanti landaknya punya fanclub, aku mau jadi member pertama. 😔☝️ Pokoknya semangat terus ya, Ashley. Semoga kerjaannya lancar, rezekinya makin deras, dan semoga kamu selalu dikelilingi hal-hal baik. Jangan lupa update foto landaknya. Serius. Ini bukan request lagi. Ini tuntutan.\nUdah ah, kepanjangan. Dadahhhh!! \nSalam hangat,\nArin 🌱',
@@ -273,8 +273,8 @@ export const friendsMusic = [
     favoriteSong: {
       title: 'Consume',
       artist: 'Chase Atlantic',
-      cover: '/images/friends/friend-8-song.jpg',
-      src: '/audio/friends/friend-8.mp3',
+      cover: '/images/friends/friend-9-song.jpg',
+      src: '/audio/friends/friend-9.mp3',
     },
     favoriteAlbum: {
       title: 'Beauty in death',
@@ -284,6 +284,123 @@ export const friendsMusic = [
     favoriteArtist: {
       name: 'Chase Atlantic',
       photo: '/images/friends/friend-9-artist.jpg',
+    },
+  },
+  
+  {
+    id: 'friend-10',
+    name: 'Citra♡',
+    avatar: '/images/friends/friend-10.jpeg',
+    thanksNote: 'Jangan cape jadi imut yaa!',
+    secretNote: 'Haiii Citraaaa!! 🤍\n Sebelumnya makasii yaa udah mau berkontribusi di my little practice website ini xixixi. Aku cuma mau bilang… AKU BANGGA BANGET SAMA KAMU, CITTTT. 😭🤍 Serius deh. Apalagi sama semua pencapaian yang udah kamu dapetin akhir-akhir ini. Pengalaman kerja kamu nambah, terus akhirnya keterima POLBAN juga. Alhamdulillah bangettt. Pas denger kabarnya aku ikut seneng parah. You really deserve it. Semoga nanti kuliahnya lancar, ketemu dosen yang baik, temen-temen yang baik, dan semoga semua hal yang lagi kamu usahain dipermudah ya. Aku percaya kok kamu pasti bisa. Kamu tuh pinter, rajin, cantik, imut… lengkap dah pokoknya. Semua diborong. WKWKWKWK. Tunjukin ya Citra versi baru yang lebih baik, kayak yang pernah kamu bilang di SG itu. Aku bakal ikut nyorakin dari jauh. 😎🤍 Jujur ya… Aku sedih juga ternyata sekarang kita udah jarang ngobrol dan jarang ketemu. Padahal aku beneran kangen. Berkali-kali kepikiran pengen chat kamu, tapi suka sungkan. Apalagi pas kamu lagi magang kemarin, aku takut ganggu. Terus sekarang pasti makin sibuk juga kan. Tapi satu hal yang selalu aku yakinin… Kehidupan SMK aku nggak bakal se-seru, se-random, dan se-menyenangkan itu kalau nggak ada kamu. Makasih ya, Cit. Makasih udah selalu ada pas aku lagi seneng maupun lagi down. Makasih juga udah jadi partner terbaik di proyek kantin kita. 😭 WKWKWK. Kalau diinget-inget sekarang rasanya campur aduk ya. Capek, seru, ngeselin, bikin ketawa, tapi ujung-ujungnya jadi kenangan yang bakal susah dilupain. Intinya… makasih udah mau jadi temen aku. Eh, bukan cuma temen sih. Aku nganggep kamu sahabat. Dan walaupun sekarang kita udah sama-sama sibuk sama jalan kita masing-masing, aku harap itu nggak bikin kita jadi asing. Aku juga nggak tau sekarang kabar kamu gimana. Semoga baik-baik aja ya. Tapi kalau ternyata lagi nggak baik-baik aja… Please, just text me. Jangan sungkan. Jangan ngerasa ganggu. Aku udah lama banget nggak denger cerita kamu, jadi kalau suatu hari tiba-tiba kamu muncul di chat buat yapping satu jam juga gapapa. I\’ll always make time for you. Ohiyaaa… Maaf ya Cit, aku nggak sempet ngucapin waktu ulang tahun kamu kemarin. 🥹 Jadi izinin aku ngucapinnya di sini aja ya. Happy belated birthday, Citraaa!! 🤍 Semoga di umur yang baru ini kamu makin bahagia, makin kuat, makin dewasa, makin dikelilingi orang-orang yang tulus, dan semoga semua doa yang kamu simpen pelan-pelan dikabulin satu per satu. Semangat ya, anak perempuan pertama. I know it isn\'t easy. I really do. Karena… I feel you. Kita sama-sama tau rasanya jadi anak pertama. Kadang harus kuat duluan, kadang harus ngalah duluan. Jadi jangan lupa juga buat jaga diri kamu sendiri ya. Pokoknya aku bakal selalu doain yang terbaik buat kamu. See you when life lets us cross paths again. 🤍 Udah ah, kepanjangan jir WKWKWKWK. \n Salam hangat, \n Amnis 🌼',
+    secretPassword: 'citcit',
+    songForThem: { title: 'Every Summertime', artist: 'NIKI' },
+    notes: {
+      lyric: " Wondered what I’m here for and what I will be Rotated all my angles but to what degree?",
+      song: 'Close to you',
+      artist: 'Reality club',
+    },
+    favoriteSong: {
+      title: 'Four summer',
+      artist: 'Reality club',
+      cover: '/images/friends/friend-8-album.jpg',
+      src: '/audio/friends/friend-10.mp3',
+    },
+    favoriteAlbum: {
+      title: 'Reality club present',
+      artist: 'Reality club',
+      cover: '/images/friends/friend-8-album.jpg',
+    },
+    favoriteArtist: {
+      name: 'Reality club',
+      photo: '/images/friends/friend-10.jpg',
+    },
+  },
+  {
+    id: 'friend-11',
+    name: 'Meiza♡',
+    avatar: '/images/friends/friend-11.jpeg',
+    thanksNote: 'Woi ajak gw ke imo',
+    secretNote: 'Haiii Meijaaa!! WKWKWKWK 🤍\n Sebelumnya makasii yaa udah mau berkontribusi di my little website gwejh ini. Appreciate it bangettt.Intinya di note ini aku cuma mau bilang… I\’m really proud of you, Mei. 🤍 Asli, dari zaman SMK juga aku udah mikir, “Anjir ada cewe sekeren sekece se jawa ini” Kayak… pinter, bisa banyak hal. Jadi pas kamu jadi lulusan terbaik waktu itu aku malah nggak kaget. Soalnya emang kamu layak dapet itu. Proud banget asliii. Terus sekarang kamu udah kerja juga. Ikut seneng banget liatnya. Semoga semuanya lancar ya di sana. Aku tau pasti nggak gampang harus ngerantau jauh dari rumah, adaptasi sama lingkungan baru, kerjaan baru, orang-orang baru. Capek pasti. Tapi aku yakin… Mei mah pasti bisa. You always figure things out somehow. Btw… ketoprak di rel kereta Argo Ngawi itu gimana kabarnya? 😭 Jujur ya, kita sekarang udah jarang banget ngobrol. Padahal aku pengen banget ngobrol banyak sama kamu. Tapi entah kenapa aku suka sungkan duluan kalau mau chat. Gatau kenapa jir. 😭 Btw… AJAK AKU IMOO WOI. ️ Terus… maaf ya Mei kalau selama di SMK aku pernah punya salah atau pernah bikin kamu kesel. Kalau emang pernah, anggep aja Amnis dulu masih NPC yang belum dapet update. WKWKWKWK. Tapi serius, makasih ya. Makasih udah bikin kehidupan SMK aku jadi jauh lebih berwarna. Makasih juga udah jadi partner mencuci beras terbaik sepanjang sejarah. 😭 Kalau dipikir-pikir sekarang lucu banget ya. Banyak banget kejadian random yang nggak jelas, inside jokes yang bahkan mungkin orang lain nggak bakal ngerti, tapi buat kita lucu aja. Dan satu hal yang pengen aku bilang… Kamu nggak harus selalu keliatan kuat kok. Gapapa kalau suatu saat capek. Gapapa kalau lagi ngerasa lemah. Kamu juga manusia. Kamu juga punya hak buat istirahat, buat ngeluh, buat minta ditemenin. Agak aneh ya kita ngobrol serius begini WKWKWKWK. Soalnya biasanya malah bahas hal-hal random nggak jelas. Tapi ya… aku emang selalu berharap yang terbaik buat kamu. Semoga kerjaannya lancar, rezekinya dilancarin, selalu dipertemukan sama orang-orang baik, dan semoga hati kamu juga selalu dijaga sama Yang Di Atas. Pokoknya, thank you for being part of one of the best chapters of my life. Udah ah, kepanjangan jir.\nDadahhh Meizaaa!! 🤍\nSalam hangat, \nAmnis 🌼',
+    secretPassword: 'harit',
+    songForThem: { title: 'Yellow', artist: 'Coldplay' },
+    notes: {
+      lyric: " I never really got there \n I just pretended that I had",
+      song: 'Jigsaw Falling Into Place',
+      artist: 'Radiohead',
+    },
+    favoriteSong: {
+      title: 'Tekt It (speed version)',
+      artist: 'Cafuné',
+      cover: '/images/friends/friend-11-song.jpg',
+      src: '/audio/friends/friend-11.mp3',
+    },
+    favoriteAlbum: {
+      title: 'Ultaviolence',
+      artist: 'Lana Del Rey',
+      cover: '/images/friends/friend-11-album.png',
+    },
+    favoriteArtist: {
+      name: 'Deftones',
+      photo: '/images/friends/friend-11-artist.jpg',
+    },
+  },
+  {
+    id: 'friend-12',
+    name: 'Asheu♡',
+    avatar: '/images/friends/friend-12.jpeg',
+    thanksNote: 'Asheu ayo kita jelajahi kuliner jawwwa barat',
+    secretNote: 'Haloooo Ajengggg!!! 🤍\n  Sebelumnya makasii banyak yaa udah mau berkontribusi di my little website gwejh ini. Appreciate it bangettt.Terus sekarang aku mau bilang sesuatu yang udah lama pengen aku bilang… AKU BANGGA BANGET SAMA KAMU, AJENGGG. 😭🤍 Serius. Aku tau dari cerita-cerita yang pernah kamu bagi ke aku, perjalanan kamu buat sampai di titik sekarang tuh nggak gampang. Dan mungkin sampai sekarang pun kamu masih terus belajar buat beradaptasi sama banyak hal. Makanya… aku beneran bangga. Menurutku kamu keren banget. Yang paling aku suka dari kamu tuh cara kamu mikir. Kadang bisa tiba-tiba jadi manusia paling random sedunia, tapi pas lagi serius… wah, isi kepalamu keren banget. Cara kamu ngeliat suatu hal sering bikin aku mikir, “Oh iya ya…” Terus kamu tuh selalu ngerendah mulu jir. Padahal udahlah, Ajeng. Kamu emang sekeren itu. Bahkan tanpa kamu sadar, ada banyak cara pikir kamu yang aku terapin di hidup aku sekarang. Salah satunya ya filosofi “bodo amat.” 😭 Asli itu ngebantu aku banget. Jadi makasih ya. Makasih juga karena kamu selalu mau direpotin sama aku. Makasih udah selalu dengerin aku kalau lagi overthinking, lagi bingung, atau lagi ngomongin hal random yang bahkan nggak penting. Aku beneran bersyukur punya temen kayak kamu. Please ya… Jangan sampe kita asing. 😭 Aku sayang banget sama kamu. Dan makasih juga karena selalu mau ngajak main atau nemenin aku. Aku tau mungkin aku belum bisa banyak ngebantu kamu balik, tapi semoga suatu hari nanti aku juga bisa jadi temen yang sebaik kamu buat aku. Terus satu hal lagi… Kalau kamu lagi mulai bahas sejarah, teori konspirasi, atau hal-hal random yang kamu suka… Asli keren banget. Aku tuh dengerin sambil mikir, “Buset ini manusia kok tau banyak banget.” 😭 Walaupun jujur kadang aku agak loading bentar WKWKWKWK. Tapi percaya deh, di kepala aku tuh sebenernya banyak banget pertanyaan yang pengen ditanyain. Makanya… Bikin podcast dong. 😔☝️ Serius. Aku bakal jadi subscriber pertama. Pokoknya, aku selalu berdoa yang terbaik buat kamu ya, Jeng. Dan satu hal yang paling pengen aku titip… Jangan bandingin diri kamu sama orang lain. Apalagi sama kakak kamu. Aku tau kadang omongan orang, ekspektasi keluarga, atau perbandingan-perbandingan itu capek buat didenger. Tapi percaya deh… Semua orang punya timeline-nya masing-masing. Dan menurutku, sampai di titik ini aja kamu udah keren banget. Kamu nggak harus jadi versi orang lain buat berhasil. Jadi aja Ajeng yang aku kenal. Ajeng yang punya rasa penasaran tinggi, yang suka cerita hal-hal unik, yang kadang random, tapi selalu punya cara sendiri buat ngeliat dunia.Aku yakin suatu hari nanti kamu bakal sukses. Dengan cara kamu sendiri. Dengan jalan kamu sendiri. Dan aku bakal ikut bangga waktu hari itu dateng. Pokoknya semangat terus yaa. Oh iya… Aku tunggu tanggal main kita. Udah ah, kepanjangan.\nDadahhh Ajenggg!!\nSalam hangat,\nAmnis 🌼',
+    secretPassword: 'tunduh',
+    songForThem: { title: 'Saturn', artist: 'Sleeping At Last' },
+    notes: {
+      lyric: " I am a forest fire \n And I am the fire and I am the forest \n And I am a witness watching it",
+      song: 'A Burning Hill',
+      artist: 'Mitski',
+    },
+    favoriteSong: {
+      title: 'Honey',
+      artist: 'Porch light',
+      cover: '/images/friends/friend-12-song.jpg',
+      src: '/audio/friends/friend-12.mp3',
+    },
+    favoriteAlbum: {
+      title: 'Sialnya, hidup harus tetap berjalan',
+      artist: 'Bernadya',
+      cover: '/images/friends/friend-12-album.jpg',
+    },
+    favoriteArtist: {
+      name: 'Billie Eilish',
+      photo: '/images/friends/friend-12-artist.jpg',
+    },
+  },
+  {
+    id: 'friend-13',
+    name: 'Anggita♡',
+    avatar: '/images/friends/friend-13.jpeg',
+    thanksNote: 'Salam anak teknik',
+    secretNote: 'Hamlooo Anggiii!! 🤍\n Sebelumnya makasii banyak yaa Anggi udah mau berkontribusi di my little website gwejh ini. Appreciate it bangettt. Terus sekarang aku mau bilang sesuatu… AKU BANGGA BANGET SAMA KAMUUUU. 😭🤍 ASLIII. Akhirnya keterima di UPI jirrr. Setelah berkali-kali nyoba, akhirnya usaha kamu kebayar juga. Aku tau itu pasti bukan perjalanan yang gampang. Berkali-kali gagal terus tetep bangkit lagi buat nyoba… itu nggak semua orang bisa lakuin. Makanya pas denger kamu lolos, aku ikut seneng banget. Alhamdulillah. 🥹🤍 Ditunggu ya nanti di UPI. Sering-sering main ke FPMIPA pls. WKWKWKWK. Terus aku juga mau bilang… Makasih ya. Dan maaf juga. 😭 Maaf karena selalu bikin kamu nunggu balasan chat aku yang super slow response itu. Asli bukan karena aku butuh nggak butuh sama kamu ya. Aku emang kadang males buka WhatsApp. Apalagi pas liburan. Rasanya pengen uninstall aja jir. WKWKWKWK. Tapi makasih ya karena kamu selalu sabar. Terus selamat sekali lagi buat perjalanan barunya. Semangat ya menempuh kehidupan perkuliahan. Semoga kuliahnya lancar, tugasnya nggak terlalu nyiksa, ketemu temen-temen yang baik, dosen yang baik, dan selalu dikelilingi hal-hal baik. Jujur aja… Kehidupan SMK aku nggak bakal seberwarna itu kalau nggak ada kamu. Aku beneran bersyukur pernah punya temen kayak kamu. Aku juga nggak tau sekarang akhir-akhir ini kabar kamu gimana. Semoga semuanya baik-baik aja ya. Terus aku mau nitip satu hal. Jangan terlalu overthinking. Aku tau kamu kadang suka mikirin banyak kemungkinan sebelum mulai sesuatu. Kadang jadi takut duluan. But honestly… Just do it. Karena kalau terlalu lama mikirin “gimana kalau gagal?”, “gimana kalau ini?”, “gimana kalau itu?”… nanti malah langkah pertamanya nggak pernah diambil. Aku berharap di masa kuliah nanti kamu bisa pelan-pelan keluar dari itu. Percaya deh, kuliah bakal ngajarin banyak hal. Kadang capek, kadang bikin pengen nyerah, kadang juga ketemu orang-orang yang nggak sesuai ekspektasi. Nggak semua orang bakal sebaik temen-temen kita waktu SMK. Tapi itu juga bagian dari proses buat tumbuh. Dan aku yakin kamu bisa lewatin semuanya. Pokoknya semangat terus ya, Anggi. Aku bakal selalu doain yang terbaik buat kamu. See you around, calon anak UPI yang kece. 😎🤍 Oh iya… AJAK GWEJH KE IMO WOEEE. \nUdah ah, kepanjangan. Dadahhh Anggiii!! 🤍 \nSalam hangat, \nAmnis 🌼',
+    secretPassword: 'imo',
+    songForThem: { title: 'Hall of Fame', artist: 'The Script' },
+    notes: {
+      lyric: " You know I want you \n It's not a secret I try to hide \n But I can't have you \n We're bound to break and my hands are tied",
+      song: 'Rewrite The Stars',
+      artist: 'Anne Marie & James Arthur',
+    },
+    favoriteSong: {
+      title: 'Rewrite The Stars ',
+      artist: 'Anne Marie & James Arthur',
+      cover: '/images/friends/friend-13-song.jpg',
+      src: '/audio/friends/friend-13.mp3',
+    },
+    favoriteAlbum: {
+      title: 'Heavy Serenade ',
+      artist: 'Nmixx',
+      cover: '/images/friends/friend-13-album.jpg',
+    },
+    favoriteArtist: {
+      name: 'izna',
+      photo: '/images/friends/friend-13-artist.webp',
     },
   },
 ]

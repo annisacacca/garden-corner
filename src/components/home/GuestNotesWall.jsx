@@ -22,7 +22,7 @@ export default function GuestNotesWall() {
 
   return (
     <section className="max-w-5xl px-6 pb-24 mx-auto">
-      <SectionHeading eyebrow="notes from visitors" title="the mading wall" align="center" />
+      <SectionHeading eyebrow="notes from visitors" title="the visitor wall" align="center" />
 
       {loading ? (
         <p className="text-sm text-center font-body text-ink/50">loading notes...</p>
