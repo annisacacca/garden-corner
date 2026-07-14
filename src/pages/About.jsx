@@ -310,7 +310,7 @@ export default function Profile() {
         {/* name + short bio */}
         <div className="flex flex-col gap-4 pt-8 pl-2 mb-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <h1 className="font-hand text-3xl text-[#3f3a2e]">Amnis</h1>
+            <h1 className="font-hand text-3xl text-[#3f3a2e]">Ubi</h1>
             <p className="max-w-md font-body text-sm text-[#3f3a2e]/70">
               Computer Science student, 5th semester. Looking for growth that still leaves room to breathe.
             </p>
@@ -365,7 +365,7 @@ export default function Profile() {
               <div className="flex items-center gap-3 p-4 pb-2">
                 <span className="h-9 w-9 rounded-full bg-[#c3cdb0]" />
                 <div>
-                  <p className="font-hand text-lg text-[#3f3a2e]">Amnis</p>
+                  <p className="font-hand text-lg text-[#3f3a2e]">Ubi</p>
                   <p className="font-body text-[11px] text-[#3f3a2e]/50">About me</p>
                 </div>
               </div>
@@ -383,7 +383,7 @@ export default function Profile() {
               <div className="flex items-center gap-3 p-4 pb-2">
                 <span className="h-9 w-9 rounded-full bg-[#c3cdb0]" />
                 <div>
-                  <p className="font-hand text-lg text-[#3f3a2e]">Amnis</p>
+                  <p className="font-hand text-lg text-[#3f3a2e]">Ubi</p>
                   <p className="font-body text-[11px] text-[#3f3a2e]/50">Dream</p>
                 </div>
               </div>
@@ -439,12 +439,20 @@ export default function Profile() {
                 <IconDumpling className="h-4 w-4 text-[#8fa876]" /> Favorite Food
               </h3>
               <p className="mb-3 font-body text-xs text-[#3f3a2e]/70">
-                I'll eat almost anything edible, but bakcang wins.
+                I'll eat almost anything edible, but bacang and hui cilembu wins.
               </p>
-              <div className="w-20 h-20 overflow-hidden border-4 border-white shadow-md rounded-xl">
-                {/* pass src="/photos/bakcang.jpg" for the real photo */}
-                <PhotoSlot icon={IconCup} tone="light" src="/images/food.webp" alt="matcha extra" />
-              </div>
+              <div className="flex items-end gap-3">
+    <div className="w-20 h-20 overflow-hidden border-4 border-white shadow-md rounded-xl">
+      {/* pass src="/photos/matcha.jpg" for the real photo */}
+      <PhotoSlot icon={IconCup} tone="light" src="/images/food1.jpg" alt="keep going" />
+    </div>
+    <div
+      className="w-20 h-20 overflow-hidden border-4 border-white shadow-md rounded-xl"
+    >
+      {/* ganti src ini dengan foto kedua kamu */}
+      <PhotoSlot icon={IconCup} tone="light" src="/images/food2.jpg" alt="matcha extra" />
+    </div>
+  </div>
             </PaperFrame>
 
             <div className="flex items-start gap-2 rounded-2xl border-2 border-[#c3cdb0] bg-[#e4ead6] p-4">

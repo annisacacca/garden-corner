@@ -837,7 +837,7 @@ export default function Music() {
           <p className={`mt-2 font-hand text-lg ${night ? 'text-cream/70' : 'text-ink/60'}`}>
             {nowPlaying?.title
               ? `"${nowPlaying.title}" by ${nowPlaying.artist} — can't stop replaying this one 🎵`
-              : '"placeholder lyric snippet — replace with a line from a song you love" 🎵'}
+              : '"You know you need to get yourself to sleep and dream…" Rex Orange County - Sunflower 🎵'}
           </p>
         </div>
       </div>

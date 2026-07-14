@@ -1,9 +1,9 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   BookOpen, Code2, Palette, Clapperboard, Music2,
   Sprout, Gamepad2, NotebookPen, ChefHat, Scissors, X, Heart,
-  Pin, Shuffle, Sparkles,
+  Sparkles,
 } from 'lucide-react'
 import SectionHeading from '../components/ui/SectionHeading.jsx'
 import WashiTape from '../components/ui/WashiTape.jsx'
@@ -42,20 +42,14 @@ const pinColors = ['bg-accent', 'bg-primary', 'bg-blush', 'bg-sky']
 
 const baseTilts = [-4, 3, -3, 5, -2, 4, -5, 2, -3, 3]
 
-function seededTilt(index, shuffleSeed) {
-  return baseTilts[(index + shuffleSeed) % baseTilts.length]
-}
-
-function HobbyCard({ hobby, index, shuffleSeed, onOpen }) {
+function HobbyCard({ hobby, index, onOpen }) {
   const Icon = icons[hobby.id]
   const [key, setKey] = useState(0)
-  const tilt = seededTilt(index, shuffleSeed)
+  const tilt = baseTilts[index % baseTilts.length]
   const pinColor = pinColors[index % pinColors.length]
 
   return (
     <motion.div
-      key={shuffleSeed}
-      layout
       drag
       dragElastic={0.18}
       dragMomentum={false}
@@ -182,7 +176,7 @@ function HobbyDetailModal({ hobby, onClose }) {
 
 /** Rotating banner: "currently really into ___" — cycles through hobbies
  *  automatically so the page feels alive the moment it loads. */
-function SpotlightBanner({ onShuffle }) {
+function SpotlightBanner() {
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
@@ -196,53 +190,28 @@ function SpotlightBanner({ onShuffle }) {
   const Icon = icons[current.id]
 
   return (
-    <div className="flex flex-col items-center justify-between max-w-xl gap-3 px-5 py-3 mx-auto mb-10 rounded-full bg-white/60 shadow-soft sm:flex-row sm:gap-4">
-      <div className="flex items-center gap-2 overflow-hidden">
-        <Sparkles className="flex-shrink-0 w-4 h-4 text-accent" />
-        <span className="text-xs font-body text-ink/50 whitespace-nowrap">currently really into</span>
-        <AnimatePresence mode="wait">
-          <motion.span
-            key={current.id}
-            initial={{ opacity: 0, y: 6 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -6 }}
-            transition={{ duration: 0.3 }}
-            className="flex items-center gap-1.5 text-sm font-heading text-ink"
-          >
-            <Icon className="w-4 h-4 text-dark" />
-            {current.label}
-          </motion.span>
-        </AnimatePresence>
-      </div>
-
-      <button
-        type="button"
-        onClick={onShuffle}
-        data-cursor-hover
-        className="flex items-center gap-1.5 rounded-full bg-dark px-3 py-1.5 text-xs font-body text-cream shadow-soft shrink-0"
-      >
-        <Shuffle className="w-3.5 h-3.5" />
-        shuffle the board
-      </button>
+    <div className="flex items-center justify-center max-w-xl gap-2 px-5 py-3 mx-auto mb-10 overflow-hidden rounded-full bg-white/60 shadow-soft">
+      <Sparkles className="flex-shrink-0 w-4 h-4 text-accent" />
+      <span className="text-xs font-body text-ink/50 whitespace-nowrap">currently really into</span>
+      <AnimatePresence mode="wait">
+        <motion.span
+          key={current.id}
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -6 }}
+          transition={{ duration: 0.3 }}
+          className="flex items-center gap-1.5 text-sm font-heading text-ink"
+        >
+          <Icon className="w-4 h-4 text-dark" />
+          {current.label}
+        </motion.span>
+      </AnimatePresence>
     </div>
   )
 }
 
 export default function Hobbies() {
   const [selected, setSelected] = useState(null)
-  const [shuffleSeed, setShuffleSeed] = useState(0)
-
-  const handleShuffle = () => {
-    setShuffleSeed((s) => (s + 1 + Math.floor(Math.random() * baseTilts.length)) % baseTilts.length)
-  }
-
-  const orderedHobbies = useMemo(() => {
-    if (shuffleSeed === 0) return hobbies
-    // gently re-order for a "shuffled" feel, not a full random reshuffle every time
-    const rotated = [...hobbies]
-    const cut = shuffleSeed % rotated.length
-    return [...rotated.slice(cut), ...rotated.slice(0, cut)]
-  }, [shuffleSeed])
 
   return (
     <div className="max-w-5xl px-6 pt-32 pb-24 mx-auto">
@@ -258,16 +227,15 @@ export default function Hobbies() {
         or nudge one around if it's sitting crooked.
       </motion.p>
 
-      <SpotlightBanner onShuffle={handleShuffle} />
+      <SpotlightBanner />
 
       <div className="relative rounded-[36px] bg-[radial-gradient(rgba(95,111,82,0.14)_1.5px,transparent_1.5px)] bg-[length:16px_16px] p-4 shadow-inner sm:p-8">
         <div className="gap-4 columns-2 sm:columns-3 sm:gap-6 lg:columns-4">
-          {orderedHobbies.map((hobby, i) => (
+          {hobbies.map((hobby, i) => (
             <HobbyCard
               key={hobby.id}
               hobby={hobby}
               index={i}
-              shuffleSeed={shuffleSeed}
               onOpen={setSelected}
             />
           ))}

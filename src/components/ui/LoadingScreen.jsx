@@ -11,14 +11,14 @@ export default function LoadingScreen({ visible, progress = 0 }) {
         >
           <div className="relative flex flex-col items-center">
             {/* ripples */}
-            <div className="relative flex h-40 w-40 items-center justify-center">
+            <div className="relative flex items-center justify-center w-40 h-40">
               <motion.span
-                className="absolute h-24 w-24 rounded-full border-2 border-primary/40"
+                className="absolute w-24 h-24 border-2 rounded-full border-primary/40"
                 animate={{ scale: [1, 1.6], opacity: [0.6, 0] }}
                 transition={{ duration: 2.2, repeat: Infinity, ease: 'easeOut' }}
               />
               <motion.span
-                className="absolute h-24 w-24 rounded-full border-2 border-primary/30"
+                className="absolute w-24 h-24 border-2 rounded-full border-primary/30"
                 animate={{ scale: [1, 1.6], opacity: [0.6, 0] }}
                 transition={{ duration: 2.2, repeat: Infinity, ease: 'easeOut', delay: 1.1 }}
               />
@@ -59,11 +59,11 @@ export default function LoadingScreen({ visible, progress = 0 }) {
             </div>
 
             <motion.p
-              className="mt-4 font-hand text-2xl text-dark"
+              className="mt-4 text-2xl font-hand text-dark"
               animate={{ opacity: [0.5, 1, 0.5] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              Preparing Annisa's little world...
+              Preparing Noctera's little world...
             </motion.p>
 
             <div className="mt-4 h-1.5 w-56 overflow-hidden rounded-full bg-secondary">

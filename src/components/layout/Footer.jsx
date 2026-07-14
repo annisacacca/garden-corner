@@ -3,8 +3,8 @@ import { Github, Instagram, Linkedin, Mail } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="relative mt-20 overflow-hidden bg-dark px-6 py-16 text-cream">
-      <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+    <footer className="relative px-6 py-16 mt-20 overflow-hidden bg-dark text-cream">
+      <div className="flex flex-col items-center max-w-3xl mx-auto text-center">
         <motion.svg
           width="72"
           height="72"
@@ -30,34 +30,34 @@ export default function Footer() {
           />
         </motion.svg>
 
-        <p className="mt-4 font-hand text-3xl text-cream/90">
+        <p className="mt-4 text-3xl font-hand text-cream/90">
           Thank you for visiting my little world.
         </p>
-        <p className="mt-2 max-w-md font-body text-sm text-cream/60">
-          Come back anytime — the frog will be here, and the leaves keep falling.
+        <p className="max-w-md mt-2 text-sm font-body text-cream/60">
+          Come back anytime the frog will be here, and the leaves keep falling.
         </p>
 
-        <div className="mt-6 flex gap-4">
+        <div className="flex gap-4 mt-6">
           {[
-            { icon: Instagram, href: '#', label: 'Instagram' },
-            { icon: Github, href: '#', label: 'Github' },
+            { icon: Instagram, href: 'https://www.instagram.com/el.lyue?igsh=eGZkeXQ4b240dHJn&utm_source=qr', label: 'Instagram' },
+            { icon: Github, href: 'https://github.com/annisacacca', label: 'Github' },
             { icon: Linkedin, href: '#', label: 'LinkedIn' },
-            { icon: Mail, href: '#', label: 'Email' },
+            { icon: Mail, href: 'nocteralily@gmail.com', label: 'Email' },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
               href={href}
               aria-label={label}
               data-cursor-hover
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-cream/10 transition-colors hover:bg-cream/20"
+              className="flex items-center justify-center w-10 h-10 transition-colors rounded-full bg-cream/10 hover:bg-cream/20"
             >
-              <Icon className="h-4 w-4" />
+              <Icon className="w-4 h-4" />
             </a>
           ))}
         </div>
 
-        <p className="mt-10 font-body text-xs text-cream/40">
-          © {new Date().getFullYear()} Annisa Fitriani Lestari · made with care, one leaf at a time 🌿
+        <p className="mt-10 text-xs font-body text-cream/40">
+          © {new Date().getFullYear()} Noctera · made with care, one leaf at a time 🌿
         </p>
       </div>
     </footer>
